@@ -1,0 +1,22 @@
+svg {
+    position: relative;
+    height: 100vh;
+}
+#paises *.on path {
+    fill: purple;
+    cursor: pointer;
+}
+#info-box{
+    position: absolute;
+    z-index: 1;
+    background-color: #f79220;
+    border: 2px solid #f79220;
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Montserrat;
+    color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important;
+}

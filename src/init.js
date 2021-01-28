@@ -1,6 +1,6 @@
 
 export function init() {
-    var svgPaises = document.querySelectorAll("#paises > *");
+    var svgPaises = document.querySelectorAll("#mapa #paises > *");
     function removeAllOn() {
         svgPaises.forEach(function(el) {
             el.classList.remove("on");
@@ -29,8 +29,8 @@ export function init() {
     });
 
     $(document).mousemove(function(e) {
-        $('#info-box').css('top',e.pageY-$('#info-box').height()-30);
-        $('#info-box').css('left',e.pageX-($('#info-box').width())/2);
+        $('#info-box').css('top',e.pageY-$('#mapa').offset().top-$("#info-box").height()-30);
+        $('#info-box').css('left',e.pageX-$('#mapa').offset().left-$("#info-box").width()/2);
     }).mouseover();
 
     $("path").mouseleave(function(e) {
